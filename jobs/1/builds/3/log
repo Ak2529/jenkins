@@ -1,0 +1,74 @@
+Started by user [8mha:////4AOYaInIVp8UZfzheG3sz0EDSFES+8Df6MDS7XCw58/7AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9xGwjUyNLAJaaAMbBAAAA[0mAk2529
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Ak2529/website.git
+ > git init /var/lib/jenkins/workspace/1 # timeout=10
+Fetching upstream changes from https://github.com/Ak2529/website.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/Ak2529/website.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Ak2529/website.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 91ea8de1af2bb47d613f66fa93e0046bbefaedc6 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 91ea8de1af2bb47d613f66fa93e0046bbefaedc6 # timeout=10
+Commit message: "Update website.sh"
+ > git rev-list --no-walk 91ea8de1af2bb47d613f66fa93e0046bbefaedc6 # timeout=10
+[1] $ /bin/sh -xe /tmp/jenkins13311645227815147848.sh
++ chmod +x website.sh
++ ls -l
+total 4
+-rwxr-xr-x 1 jenkins jenkins 319 Jul  8 09:31 website.sh
++ ./website.sh
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+./website.sh: 9: unzip: not found
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+Failed to restart httpd.service: Interactive authentication required.
+See system logs and 'systemctl status httpd.service' for details.
+Failed to enable unit: Interactive authentication required.
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::fe:9ff:fe0b:9522  prefixlen 64  scopeid 0x20<link>
+        ether 02:fe:09:0b:95:22  txqueuelen 1000  (Ethernet)
+        RX packets 122897  bytes 180476390 (180.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 49740  bytes 3225853 (3.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.33.10  netmask 255.255.255.0  broadcast 192.168.33.255
+        inet6 fe80::a00:27ff:fea7:cbe7  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:a7:cb:e7  txqueuelen 1000  (Ethernet)
+        RX packets 20  bytes 2379 (2.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 22  bytes 1716 (1.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s9: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.103  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::a00:27ff:fe8a:cd1a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:8a:cd:1a  txqueuelen 1000  (Ethernet)
+        RX packets 82292  bytes 118813575 (118.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 37894  bytes 4599061 (4.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 84  bytes 6948 (6.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 84  bytes 6948 (6.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Finished: SUCCESS

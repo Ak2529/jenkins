@@ -1,0 +1,26 @@
+Started by user [8mha:////4AOYaInIVp8UZfzheG3sz0EDSFES+8Df6MDS7XCw58/7AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9xGwjUyNLAJaaAMbBAAAA[0mAk2529
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Ak2529/website.git
+ > git init /var/lib/jenkins/workspace/1 # timeout=10
+Fetching upstream changes from https://github.com/Ak2529/website.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/Ak2529/website.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Ak2529/website.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 54959d1c0b995a98ab2f0655afbd54d564af7d0d (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 54959d1c0b995a98ab2f0655afbd54d564af7d0d # timeout=10
+Commit message: "Update website.sh"
+First time build. Skipping changelog.
+[1] $ /bin/sh -xe /tmp/jenkins12790674430938910287.sh
++ ./website.sh
+/tmp/jenkins12790674430938910287.sh: 2: ./website.sh: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
